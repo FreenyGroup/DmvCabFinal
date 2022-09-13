@@ -30,9 +30,15 @@
         }
         
     </style>
+    <!-- include the widget -->
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
+    <!-- Add a menu:
+   Log in / Sign up - when the user is not logged in
+   Username / Log out - when the user is logged in
+  -->
     <div class="page-wrapper">
         <!-- Preloader -->
         <div class="preloader"></div>
@@ -93,6 +99,7 @@
                                         </li>
                                         <li><a href="#our-fleet">Fleet</a></li>
                                         <li><a href="logistics.html">Logistics</a></li>
+                                        <div data-netlify-identity-menu></div>
                                     </ul>
                                 </div>
                             </nav>
